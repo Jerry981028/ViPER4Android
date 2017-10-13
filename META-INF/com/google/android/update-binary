@@ -141,7 +141,7 @@ mkdir -p $MODPATH/system/priv-app/ViPER4Android 2>/dev/null
 
 # copy app
 ui_print "* Installing V4A Materialized app"
-cp -af $INSTALLER/app/ViPER4Android.apk $MODPATH/system/priv-app/ViPER4Android/ViPER4Android.apk
+#cp -af $INSTALLER/app/ViPER4Android.apk $MODPATH/system/priv-app/ViPER4Android/ViPER4Android.apk
 
 # determine CPU arch and driver
 ui_print "* Determining your device's arch and installing driver"
