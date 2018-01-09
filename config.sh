@@ -119,14 +119,15 @@ install_v4a_module() {
 	ui_print "* Checking for existing audio libs and effects"
 	# MusicFX
 	if [ -d "/system/priv-app/MusicFX" ]; then
-		ui_print " -> Found MusicFX, blacklisting."
-		mkdir -p "$MODPATH/system/priv-app/MusicFX" 2>/dev/null
-		touch "$MODPATH/system/priv-app/MusicFX/.replace"
+		ui_print " -> Found MusicFX."
+		#mkdir -p "$MODPATH/system/priv-app/MusicFX" 2>/dev/null
+		#touch "$MODPATH/system/priv-app/MusicFX/.replace"
+	fi
 	# AudioFX
-	elif [ -d "/system/priv-app/AudioFX" ]; then
-		ui_print " -> Found AudioFX, blacklisting."
-		mkdir -p "$MODPATH/system/priv-app/AudioFX" 2>/dev/null
-		touch "$MODPATH/system/priv-app/AudioFX/.replace"
+	if [ -d "/system/priv-app/AudioFX" ]; then
+		ui_print " -> Found AudioFX"
+		#mkdir -p "$MODPATH/system/priv-app/AudioFX" 2>/dev/null
+		#touch "$MODPATH/system/priv-app/AudioFX/.replace"
 	fi
 	
 	# create skeleton files and dirs

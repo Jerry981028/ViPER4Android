@@ -6,11 +6,9 @@ No configuration, no additional frameworks, no special requirements, no hacks, n
 
 Module is based on original module made by [topjohnwu](https://github.com/topjohnwu).
 
-Uses ViPER4Android 2.5.0.4 driver and **includes** ViPER4Android FX app, so you don't have to install anything.
+Uses ViPER4Android 2.5.0.4 driver and **excludes** ViPER4Android app, so you will have to install it manually. Will check for MusicFX and AudioFX but will not blacklist anything.
 
 **NOTE**: If you're searching for module version still using V4A Materialized app, search no more. You can find it [here](https://github.com/ShadySquirrel/ViPER4Android/releases), just find ones marked as 'materialized'.
-
-**WARNING**: Since V4A app is systemlessly installed into /system/priv-app (just to stop your ROM from killing V4A too often), this module is possibly incompatible with AppSystemizer and similar modules and may cause undesirable/unpredictable behaviour when installed in conjuction with it. Be aware of this. If you want to use this module without provided app, edit updater-script manually or open an issue here/contact me on XDA to make flashable module without provided app.
 
 ## Requirements
 * Android 5.0+ with fully functional Magisk installation,
